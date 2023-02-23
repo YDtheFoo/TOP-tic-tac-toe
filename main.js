@@ -175,7 +175,7 @@ function generateBoard(size = 3){
     isBlueTurn = true
     hoverGradient = 'linear-gradient(45deg, #c3e7ff, #ffffff)'
     //style gameBoard
-    const boardWidth = window.innerWidth / 2
+    const boardWidth = ((window.innerWidth / 2) > 500) ? 500 : window.innerWidth / 2
     gameBoard.style.width = `${boardWidth}px`
     gameBoard.style.height = `${boardWidth}px`
 
